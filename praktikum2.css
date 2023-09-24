@@ -1,0 +1,181 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px 3%;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar img.logo {
+    max-width: 60px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 65px 0px;
+    width: 100%;
+}
+
+.content .content-text {
+    flex-basis: 55%;
+}
+
+.content-text h2.product-header {
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 600;
+}
+
+.content-text h2.product-header span {
+    font-weight: 900;
+    color: #004b93;
+}
+
+.content-text p.product-des {
+    margin: 20px 0;
+}
+
+.content .content-text button.learn-more {
+    cursor: pointer;
+    width: 140px;
+    font-family: 'Poppins', sans-serif;
+    padding: 12px 10px;
+    background-color: #004b93;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    letter-spacing: 1px;
+}
+
+.content .gambar {
+    flex-basis: 45%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content .gambar img.pepsi {
+    max-width: 250px;
+    margin-right: 30px;
+}
+
+.content .gambar .akun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.akun ul.akun-saya li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.akun ul.akun-saya li img {
+    max-width: 20px;
+    max-height: 25px;
+    filter: invert(1);
+}
+
+.shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #004b93;
+    z-index: -1;
+    clip-path: circle(500px at right 700px);
+}
+
+.produknya ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.produknya ul li:hover {
+    transform: translateY(-15px);
+}
+
+.produknya ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produknya ul li img {
+    max-width: 35px;
+}
+
+@media only screen and (max-width: 1030px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .shape {
+        clip-path: circle(400px at center bottom);
+    }
+
+    .content-text h2.product-header {
+        font-size: 3em;
+    }
+
+    .gambar {
+        position: relative;
+    }
+
+    .gambar .akun {
+        position: absolute;
+        bottom: 0px;
+        right: -50px;
+    }
+
+    .content-text {
+        margin-bottom: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .gambar img.pepsi {
+        max-width: 200px;
+        margin-right: 0;
+    }
+}
